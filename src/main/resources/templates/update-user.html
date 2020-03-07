@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../static/css/main.css" th:href="@{/css/main.css}">
 <title>Helmes Homework - Edit/Update</title>
 </head>
@@ -9,7 +9,7 @@
 	<h3>Now you can edit and update your data during session.</h3>
 	<div class="container">
 		<form action="#"
-		  th:action="@{/updateUser/{id}(id=${user.id})}"
+		  th:action="@{/updateUser}"
 		  th:object="${user}"
 		  method="post">
 			<label for="name">Name:</label><br>

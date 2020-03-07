@@ -75,23 +75,26 @@ public class UserController {
 			
 		} catch (Exception e) {
 			
-			throw new SessionNotFoundException();
+			throw new SessionNotFoundException(e.getMessage());
 		}
 
 		return Constants.UPDATE_USER_FORM;
 	}
 
 	@PostMapping(Constants.UPDATE_USER_BY_ID_ACTION)
-	public String updateUser(@PathVariable("id") long id, @Valid User user, BindingResult result, Model model) {
-
+	public String updateUser(@Valid User user, BindingResult result, Model model, HttpSession session) {
+		
+		
 		// Validate fields
 		if (result.hasErrors()) {
 			model.addAttribute("sectors", sectorService.getAllSectors());
-			user.setId(id);
+			user.setId((long) session.getAttribute("id"));
 
 			return Constants.UPDATE_USER_FORM;
 		}
-
+		
+		user.setId((long) session.getAttribute("id"));
+		
 		// Save updated user details to database
 		userService.saveUser(user);
 
