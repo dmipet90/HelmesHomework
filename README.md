@@ -4,13 +4,13 @@ Test solution for access to practice.
 
 ## Tasks
 
-1. Correct all of the deficiencies in index.html
+<b>1.</b> Correct all of the deficiencies in index.html
 
-2. "Sectors" selectbox:
+<b>2.</b> "Sectors" selectbox:
 - Add all the entries from the "Sectors" selectbox to database
 - Compose the "Sectors" selectbox using data from database
 
-3. Perform the following activities after the "Save" button has been pressed: 
+<b>3.</b> Perform the following activities after the "Save" button has been pressed:
 - Validate all input data (all fields are mandatory)
 - Store all input data to database (Name, Sectors, Agree to terms)
 - Refill the form using stored data 
@@ -69,3 +69,8 @@ Database:
 
 Server address:
 - http://localhost:8080
+
+## Author
+
+- <b>Dmitri Petrussevits</b> - Junior Software Developer
+
