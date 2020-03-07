@@ -1,25 +1,20 @@
 # Helmes Homework
 
-Test solution for access to practice. Done by Dmitri Petrussevits.
-
-## Database info
-
-- User: admin
-- Password: admin
+Test solution for access to practice.
 
 ## Tasks
 
-- 1. Correct all of the deficiencies in index.html
+1. Correct all of the deficiencies in index.html
 
-- 2. "Sectors" selectbox:
-- 2.1. Add all the entries from the "Sectors" selectbox to database
-- 2.2. Compose the "Sectors" selectbox using data from database
+2. "Sectors" selectbox:
+- Add all the entries from the "Sectors" selectbox to database
+- Compose the "Sectors" selectbox using data from database
 
-- 3. Perform the following activities after the "Save" button has been pressed: 
-- 3.1. Validate all input data (all fields are mandatory)
-- 3.2. Store all input data to database (Name, Sectors, Agree to terms)
-- 3.3. Refill the form using stored data 
-- 3.4. Allow the user to edit his/her own data during the session
+3. Perform the following activities after the "Save" button has been pressed: 
+- Validate all input data (all fields are mandatory)
+- Store all input data to database (Name, Sectors, Agree to terms)
+- Refill the form using stored data 
+- Allow the user to edit his/her own data during the session
 
 ## Built With
 
@@ -55,7 +50,7 @@ mvn spring-boot:run
 - `service` — to hold our business logic;
 - `controller` — to listen to the client;
 - `exception` — to hold custom exceptions;
-- `shared` — to hold additional classes like Utils etc.;
+- `shared` — to hold additional classes like Utils;
 
 - `resources/` - Contains all the static resources, templates and property files.
 - `resources/static` - contains static resources such as css, js and images.
@@ -66,5 +61,11 @@ mvn spring-boot:run
 
 - `pom.xml` - contains all the project dependencies
 
+## Additional info
 
+Database:
+- User: admin
+- Password: admin
 
+Server address:
+- http://localhost:8080
