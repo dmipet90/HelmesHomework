@@ -98,6 +98,6 @@ public class UserController {
 		// Save updated user details to database
 		userService.saveUser(user);
 
-		return Constants.REDIRECT_HOME;
+		return Constants.REDIRECT_TO_UPDATE_USER;
 	}
 }
